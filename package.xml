@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mypkg</name>
+  <name>person_msgs</name>
   <version>0.0.0</version>
   <description>person type package</description>
   <maintainer email="s22C1014KY@s.chibakoudai.jp">EbisawaRyota</maintainer>
@@ -19,4 +19,3 @@
   <export>
     <build_type>ament_cmake</build_type>
   </export>
-</package>
