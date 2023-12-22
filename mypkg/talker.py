@@ -1,19 +1,21 @@
+#!/usr/bin/python3
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Person
+from person_msgs.msg import Int16
 
-rclpy.init()
-node = Node("talker")
-pub = node.create_publisher(Person, "perosn", 10)
-n = 0
-
-def cb():
-    global n
-    msg = Person()
-    msg.name = "海老澤良太"
-    msg.age = n
-    pub.publish(msg)
-    n += 1
-
-node.create_timer(0.5, cb)
-rclpy.spin(node)
+class Talker():
+    def__init__(self, node):
+       self.pub = node.create_publisher(Int16, "countup", 10)
+       self.n = 0
+       node.create_timer(0.5, self.cb)
+    
+    def cb(self):
+       msg = Int16()
+       msg.date = self.n
+       self.pub.publish(msg)
+       self.n += 1
+def main():
+    rclpy.init()
+    node = Node("talker")
+    talker = Talker(node)
+    rclpy.spin(node)
