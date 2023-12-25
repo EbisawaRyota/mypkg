@@ -2,8 +2,27 @@
 ロボットシステム学2023で使用しているリポジトリ
 
 ![test](https://github.com/EbisawaRyota/mypkg/actions/workflows/test.yml/badge.svg)
-## rosの通信
 
+## ROSの通信
+端末1でtalkerのプログラムを立ち上げる
+```
+端末1$　ros2 run demo_nodes_py talker
+・・・
+[INFO] [1660366971.132536000] [talker]:Publishing:"Hello World: 79"
+[INFO] [1660366972.132853800] [talker]:Publishing:"Hello World: 80"
+[INFO] [1660366973.132538200] [talker]:Publishing:"Hello World: 81"
+・・・
+```
+次に、端末2の方でtalkerのプログラムを立ち上げる
+```
+端末2$　ros2 run demo_nodes_py listener
+・・・
+[INFO] [1660366971.133705900] [listener]:I heard:"Hello World: 79"
+[INFO] [1660366972.133861900] [listener]:I heard:"Hello World: 80"
+[INFO] [1660366973.133210800] [listener]:I heard:"Hello World: 81"
+・・・
+```
+このようにノードを互いに通信させることができる
 
 ## 必要なソフト
 * Python
