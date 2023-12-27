@@ -26,4 +26,4 @@ setup(
             'listener = mypkg.listener:main',
         ],
     },
-)
+).
