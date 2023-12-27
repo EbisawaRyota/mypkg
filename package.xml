@@ -3,7 +3,7 @@
 <package format="3">
   <name>mypkg</name>
   <version>0.0.0</version>
-  <description>package for practice</description>
+  <description>a package for practice</description>
   <maintainer email="s22C1014KY@s.chibakoudai.jp">EbisawaRyota</maintainer>
   <license>BSD-3-Clause</license>
   <exec_depend>rclpy</exec_depend>
