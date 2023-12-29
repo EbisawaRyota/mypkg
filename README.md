@@ -1,5 +1,5 @@
 # mypkg
-このリポジトリは
+このリポジトリはROS 2で使えるリポジトリであり、talkeとlistenerのノードでメッセージの送受信を行い、ノード間の通信をすることができる。
 
 ![test](https://github.com/EbisawaRyota/mypkg/actions/workflows/test.yml/badge.svg)
 
@@ -30,7 +30,7 @@ listenerがプログラムを立ち上げトピックを受け取り、ノード
 ## listener
 * listenerはトピックを受け取りtalkerからのメッセージを受け取りコンソールに表示させる。
 ## メッセージ型
-* 
+* talkerのノードから/countupのトピックを通じて送信され、メッセージ型は16ビット符号付き整数で文字列は送ることができない。
 
 ## 必要なソフト
 * Python
