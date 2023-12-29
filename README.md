@@ -1,9 +1,9 @@
 # mypkg
-ロボットシステム学2023で使用しているリポジトリ
+このリポジトリは
 
 ![test](https://github.com/EbisawaRyota/mypkg/actions/workflows/test.yml/badge.svg)
 
-## ROS2の'talker'と'listener'ノード間の通信
+## ROS 2の'talker'と'listener'ノード間の通信
 端末1でtalkerのプログラムを立ち上げる
 ```
 端末1$　ros2 run demo_nodes_py talker
@@ -13,7 +13,7 @@
 [INFO] [1660366973.132538200] [talker]:Publishing:"Hello World: 81"
 ・・・
 ```
-talkerがプログラムを立ち上げトッピクにメッセージを送信する。
+talkerがプログラムを立ち上げトピックにメッセージを送信する。
 次に、端末2の方でtalkerのプログラムを立ち上げる
 ```
 端末2$　ros2 run demo_nodes_py listener
@@ -23,15 +23,18 @@ talkerがプログラムを立ち上げトッピクにメッセージを送信�
 [INFO] [1660366973.133210800] [listener]:I heard:"Hello World: 81"
 ・・・
 ```
-listenerがプログラムを立ち上げトピック受け取り、ノードからメッセージを受け取る。
-talkerノードはトッピクに継続的にメッセージを送信。listenerはトッピクを受け取りtalkerからのメッセージを受け取りコンソールに表示させる。
+listenerがプログラムを立ち上げトピックを受け取り、ノードからメッセージを受け取る。
+
+## talker
+* talkerはトピックに継続的にメッセージを送信する。
+## listener
+* listenerはトピックを受け取りtalkerからのメッセージを受け取りコンソールに表示させる。
+## メッセージ型
+* 
 
 ## 必要なソフト
 * Python
-* Ros2
-
-## ROS2(Foxy Fitzroy)対応バージョン
-* Ubuntu 20.04
+* ROS 2(Foxy Fitzroy)
 
 ## テスト環境
 * Ubuntu 20.04
