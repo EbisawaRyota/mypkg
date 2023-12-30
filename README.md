@@ -34,7 +34,7 @@ talkerのノードから/countupのトピックを通じて送信され、メッ
 
 ## 必要なソフト
 * Python
-* ROS 2(Foxy Fitzroy)
+* ROS 2(Humble Hawksbill)
 
 ## テスト環境
 Ubuntu-22.04
