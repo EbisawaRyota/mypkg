@@ -1,5 +1,5 @@
 # mypkg
-このリポジトリはROS 2で使えるリポジトリであり、talkeとlistenerのノードでメッセージの送受信を行い、ノード間の通信をすることができる。
+このリポジトリはROS 2で使えるリポジトリであり、talkerとlistenerのノードでメッセージの送受信を行い、ノード間の通信をすることができる。
 
 ![test](https://github.com/EbisawaRyota/mypkg/actions/workflows/test.yml/badge.svg)
 
@@ -37,7 +37,7 @@ talkerのノードから/countupのトピックを通じて送信され、メッ
 * ROS 2(Foxy Fitzroy)
 
 ## テスト環境
-Ubuntu 20.04
+Ubuntu-22.04
 
 ## ライセンス及び著作権
 * このソフトウェアパッケージは３条項BSDライセンスの下、再頒布および使用が許可されます.
